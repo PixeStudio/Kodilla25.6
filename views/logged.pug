@@ -1,0 +1,13 @@
+html
+    head
+        title First Google Page
+    body
+        include ./template.pug
+            if(user)
+                h1 Hi, #{user}!
+                a(href="/") Logout
+            else
+                p U are unlogged! Please 
+                    a(href="/login") log in!
+
+            p Hello, what's up? <br> Nothing here!
