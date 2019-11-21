@@ -3,7 +3,7 @@ html
         title First Google Auth Page
     body
         include ./template.pug
-            form(action="logged", method="get")
+            form(action="/logged", method="get")
                 input(type="text", name="login", value="GoogleAdmin", placeholder="Login")
                 input(type="password", placeholder="Password")
                 input(type="submit", value="Log me in")

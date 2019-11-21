@@ -5,10 +5,10 @@ app.set('view engine', 'pug');
 app.set('views','./views');
 
 app.get('/', function(req, res){
-    res.render('login');
+    res.render('start');
 });
 
-app.get('/login', function(req, res){
+app.get('/auth/google', function(req, res){
     res.render('login');
 });
 
